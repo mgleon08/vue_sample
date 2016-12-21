@@ -4,16 +4,12 @@
   "description": "vue_sample",
   "main": "main.js",
   "scripts": {
-    "dev": "webpack-dev-server"
+    "dev": "webpack-dev-server --inline --open",
+    "build":"webpack --progress --colors"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies":{
-    "vue": "^2.1.6",
-    "jquery": "^3.1.1",
-    "bootstrap": "^3.3.7"
-  },
   "devDependencies": {
     "babel-core": "^6.20.0",
     "babel-loader": "^6.2.10",
@@ -30,9 +26,15 @@
     "url-loader": "^0.5.7",
     "vue-hot-reload-api": "^2.0.6",
     "vue-loader": "^10.0.2",
+    "vue-router": "^2.1.1",
     "vue-template-compiler": "^2.1.6",
     "webpack": "^1.14.0",
     "webpack-dev-server": "^1.16.2",
     "webpack-merge": "^1.1.1"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.1",
+    "vue": "^2.1.6"
   }
 }

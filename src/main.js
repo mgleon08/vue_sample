@@ -1,12 +1,12 @@
-import 'bootstrap'
-import 'bootstrap/dist/css/bootstrap.css'
+import Vue from 'vue'
+import App from './App.vue'
+import VueRouter from 'vue-router'
+Vue.use(VueRouter)
 
-const stylereq = require.context("./style", true, /.*\.(css|scss)/)
-stylereq.keys().forEach(function(key) {
-  stylereq(key)
-})
+const router = new VueRouter(require('./router'))
 
-const jsreq = require.context("./javascript", true, /.*\.(js|vue)/)
-jsreq.keys().forEach(function(key) {
-  jsreq(key)
+new Vue({
+  el: '#app',
+  router: router,
+  render: home => home(App)
 })

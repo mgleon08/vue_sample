@@ -19,4 +19,5 @@ open http://localhost:8080/
 ```
 
 #resources
-[vue + webpack 起手式](https://segmentfault.com/a/1190000005363030#articleHeader0)
+* [vue + webpack 起手式](https://segmentfault.com/a/1190000005363030#articleHeader0)
+* [vue2 vue-router2 webpack](http://www.qinshenxue.com/article/20161106163608.html)
